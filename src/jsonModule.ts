@@ -9,7 +9,7 @@ class jsonModule {
   public constructor() {
     if (jsonModule.instance) {
       throw new Error(
-        'YOu cannot create an object of this type. Try using jsonModule.getInstance()'
+        "Yikes! You can't create this object. Try jsonModule.getInstance()"
       );
     }
   }
@@ -22,7 +22,7 @@ class jsonModule {
     let pathExist = false;
 
     try {
-      fs.accessSync(path);
+      fs.accessSync(this._path);
       pathExist = true;
     } catch (error) {
       throw error;
@@ -35,7 +35,7 @@ class jsonModule {
     fs.writeFileSync(path, data, 'utf8');
   }
 
-  public getJSON(json): Promise<{}> {
+  public getJSON(): Promise<{}> {
     // return JSON
     const promise = new Promise((resolve, reject) => {
       if (jsonModule.isset(this._name && jsonModule.isset(this._path))) {
