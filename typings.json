@@ -1,0 +1,14 @@
+{
+  "name": "json-module",
+  "dependencies": {
+    "app-root-path": "registry:dt/app-root-path#1.2.1+20160819230705"
+  },
+  "resolution": {
+    "main": "typings/"
+  },
+  "globalDependencies": {
+    "app-root-path": "registry:dt/app-root-path#1.2.1+20160719232327",
+    "core-js": "registry:dt/core-js#0.9.0+20170324193834",
+    "node": "registry:dt/node#7.0.0+20170322231424"
+  }
+}
