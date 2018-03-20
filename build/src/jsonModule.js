@@ -4,7 +4,7 @@ const fs = require("fs");
 class jsonModule {
     constructor() {
         if (jsonModule.instance) {
-            throw new Error('YOu cannot create an object of this type. Try using jsonModule.getInstance()');
+            throw new Error("Yikes! You can't create this object. Try jsonModule.getInstance()");
         }
     }
     saveJSON(json) {
@@ -13,7 +13,7 @@ class jsonModule {
         const data = JSON.stringify(json);
         let pathExist = false;
         try {
-            fs.accessSync(path);
+            fs.accessSync(this._path);
             pathExist = true;
         }
         catch (error) {
@@ -26,7 +26,7 @@ class jsonModule {
         // writes out to DISK
         fs.writeFileSync(path, data, 'utf8');
     }
-    getJSON(json) {
+    getJSON() {
         // return JSON
         const promise = new Promise((resolve, reject) => {
             if (jsonModule.isset(this._name && jsonModule.isset(this._path))) {
