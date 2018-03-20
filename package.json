@@ -1,0 +1,26 @@
+{
+  "name": "json-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./config/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ely-alamillo/json-module.git"
+  },
+  "author": "Ely Alamillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ely-alamillo/json-module/issues"
+  },
+  "homepage": "https://github.com/ely-alamillo/json-module#readme",
+  "private": true,
+  "devDependencies": {
+    "app-root-path": "^2.0.1",
+    "typescript": "^1.8.1",
+    "typings": "^2.1.1"
+  }
+}
