@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./config/build",
-    "postinstall": "node node_modules/typings/dist/bin.js install"
+    "build": "node ./config/build"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,8 @@
   "private": true,
   "devDependencies": {
     "app-root-path": "^2.0.1",
-    "typescript": "^1.8.1",
+    "typescript": "^2.7.2",
     "typings": "^2.1.1"
-  }
+  },
+  "dependencies": {}
 }
